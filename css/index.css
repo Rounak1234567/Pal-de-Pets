@@ -98,6 +98,109 @@ body{
 /* Accessories Section */
 #pet-acc{
     display: inline-block;
+    width: 85%;
+    margin: auto;
+}
+
+.ass-card{
+    height: 470px;
+    width: 28%;
+    margin: 2%;
+    float: left;
+    border-radius: 10px;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+}
+.ass-card p{
+    font-family: cursive;
+}
+.ass-card button{
+    width: 30%;
+    height: 30px;
+    font-size: large;
+    cursor: pointer;
+    background-color: #af4d48;
+    border-radius: 15px;
+    color: white;
+    border: none;
+    padding: 5px;
+    font-family: sans-serif;
+}
+
+.ass-card > img{
+    margin-top: 5%;
+    width: 60%;
+}
+
+.petbed{
+    margin: 20%;
+}
+.cage{
+    margin: 7%;
+}
+
+#title {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    background-color: #a3e0d3;
+}
+
+#title>h2 {
+    font-size: 16px;
+    color: #001D6E;
+}
+
+#rating {
+    width: 15%;
+    height: 25px;
+    border-radius: 10px;
+    background-color: green;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-weight: bold;
 }
 
 /* Footer Section */
+#footer{
+    margin-top: 50px;
+    text-align: center;
+    width: 100%;
+    background-color: rgb(85, 81, 81);
+}
+#footer-cont{
+    margin: auto;
+    width: 85%;
+    height: 300px;
+    display: flex;
+    padding-top: 100px;
+    padding-bottom: 0px;
+    justify-content: space-around;
+}
+.footer-content-div{
+    width: 20%;
+    text-align: left;
+}
+#social-icon{
+    width: 80%;
+    height: 200px;
+    display: flex;
+    flex-direction: column;
+    gap: 5%;
+    
+}
+#social-icon img{
+    width: 22%;
+    margin: 2%;
+}
+#heart{
+    font-size: 20px;
+    color: red;
+}
+
+/* Copyright Section */
+#copy{
+    text-align: center;
+    padding-bottom: 30px;
+}
