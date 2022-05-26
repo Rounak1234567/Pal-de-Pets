@@ -1,134 +1,169 @@
 <html>
-    <head>
-        <title>Pal de Pets</title>
-        <link rel="stylesheet" href="./css/index.css">
-    </head>
-    <body>
-        <!-- Navbar Section -->
-        <div id="navbar">
-            <div id="nav-left">
-                <h3>Pal de Pets</h3>
-            </div>
-            <div id="nav-centre">
-                <a href="">Home</a>
-                <a href="">Services</a>
-                <a href="">Contact</a>
-                <a href="">About</a>
-            </div>
-            <div id="nav-right">
-                <button>Login</button>
-            </div>
+
+<head>
+    <title>Pal de Pets</title>
+    <link rel="stylesheet" href="./css/index.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous">
+    </script>
+</head>
+
+<body>
+    <!-- Navbar Section -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary fixed-top">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">Pal De Pets</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">About</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Our Services
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <li><a class="dropdown-item" href="#">Adopt a Pet</a></li>
+                  <li><a class="dropdown-item" href="#">Pet Accessories</a></li>
+                  <li><hr class="dropdown-divider"></li>
+                  <li><a class="dropdown-item" href="#">Book an Appointment</a></li>
+                </ul>
+              </li>
+              
+            </ul>
+            <form class="d-flex">
+              <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+              <button class="btn btn-secondary" type="submit">Search</button>
+            </form>
+          </div>
         </div>
-        <!-- Banner Section -->
-        <div id="banner">
-            <div id="banner-left">
-                <h1>ADOPT A PET</h1>
-                <p>Pets do not make judgments about physical appearance or abilities, and they do not care how big your house is or what you do for a living. They care about the quality of your character and your capacity to love.</p>
-                <button>Adopt a Pet Today</button>
-            </div>
-            <div id="banner-right">
-                <img src="./images/slide1-element.png" alt="">
-            </div>
+      </nav>
+    <!-- Banner Section -->
+    <div id="banner">
+        <div id="banner-left">
+            <h1>ADOPT A PET</h1>
+            <p class="lead">Pets do not make judgments about physical appearance or abilities, and they do not care how big your
+                house is or what you do for a living. They care about the quality of your character and your capacity to
+                love.</p>
+            <button class="btn btn-primary">Adopt a Pet Today</button>
         </div>
-        <!-- Adoption Section -->
-        <h1>Adoption</h1>
-        <div id="adoption">
-            <div id="adoption-left">
-                <img src="./images/adopt.jpg" alt="">
-            </div>
-            <div id="adoption-right">
-                <h2>Looking to Adopt a Pet?</h2>
-                <p>Pets are not human but display a lot of human qualities like strong personalities, emotions, preferences, etc. While pets are mere domesticated animals for those who do not possess them, for those few who do they are not just dogs, cats, or birds; they are family.</p>
-                <p>Despite the odds favouring owners outliving their pets, pet owners are inclined to keep on getting themselves new pets when the old ones pass away. If one has been the receiver of unconditional love and affection from a pet and has enjoyed a pets undemanding companionship then one is addicted for life.</p>
-                <button>Adopt a Pet Now</button>
-            </div>
+        <div id="banner-right">
+            <img src="./images/slide1-element.png" alt="">
         </div>
-        <!-- Accessories Section -->
-        <div id="accessories">
-            <h1>Accessories</h1>
-            <div id="pet-acc">
-                <div class="ass-card">
-                    <img src="./images/aquerium.webp" alt="">
-                    <div id="title">
-                        <h2>Round Ends Aquarium Tank  (5.4 L)</h2>
-                        <div id="rating">
-                            4.3 &star;
-                        </div>
-                    </div>
-                    <p>The transparent body of the tank is what makes Glass tank so attractive.</p>
-                    <p>Yes, it can tell you when to change the water and whether something dropped inside</p>
-                    <button>Buy Now</button>
-                </div>
-                <div class="ass-card">
-                    <img src="./images/pet bed.webp" alt="" class="petbed">
-                    <div id="title">
-                        <h2> Cat Dog Pet Bed</h2>
-                        <div id="rating">
-                            4.3 &star;
-                        </div>
-                    </div>
-                    <p>Mysense Incorporation is dealing in the field of pet beds from a long time.</p>
-                    <p>It understands the need of comfort and quality bed for the pets who need love and care.</p>
-                    <button>Buy Now</button>
-                </div>
-                <div class="ass-card">
-                    <img src="./images/cage.webp" alt="" class="cage">
-                    <div id="title">
-                        <h2>Bird House</h2>
-                        <div id="rating">
-                            4.3 &star;
-                        </div>
-                    </div>
-                    <p>DURABLE - The durable metal cage uses a non-toxic metallic finish for total eco-friendliness to man and bird.</p>
-                    <p>EASY TO MAITAIN - Cage detaches from base for fast, easy cleaning.</p>
-                    <button>Buy Now</button>
-                </div>
-            </div>
+    </div>
+    <!-- Adoption Section -->
+    <h1>ADOPTION</h1>
+    <div id="adoption">
+        <div id="adoption-left">
+            <img src="./images/adopt.jpg" alt="">
         </div>
-        <!-- Footer Section -->
-        <div id="footer">
-            <div id="footer-cont">
-                <div class="footer-content-div">
-                    <h2>About us</h2>
-                    <p>How it works</p>
-                    <p>Testimonials</p>
-                    <p>Careers</p>
-                    <p>Investors</p>
-                    <p>Terms of Services</p>
-                </div>
-                <div class="footer-content-div">
-                    <h2>Get Help</h2>
-                    <p>Contact</p>
-                    <p>Support</p>
-                    <p>FAQ</p>
-                    <p>Sponsorships</p>
-                    <p>Destinations</p>
-                </div>
-                <div class="footer-content-div">
-                    <h2>Videos</h2>
-                    <p>Submit Video</p>
-                    <p>Ambassadors</p>
-                    <p>Agency</p>
-                    <p>Return Policy</p>
-                    <p>Influencer</p>
-                </div>
-                <div class="footer-content-div">
-                    <h2>Social Media</h2>
-                    <div id="social-icon">
-                        <img src="./images/fb.png" alt="">
-                        <img src="./images/instagram.png" alt="">
-                        <img src="./images/youtube-logo.png" alt="">
+        <div id="adoption-right">
+            <h2>Looking to Adopt a Pet?</h2>
+            <p class="lead">Pets are not human but display a lot of human qualities like strong personalities, emotions, preferences,
+                etc. While pets are mere domesticated animals for those who do not possess them, for those few who do
+                they are not just dogs, cats, or birds; they are family.</p>
+            <p id="adopt-p2" class="lead">Despite the odds favouring owners outliving their pets, pet owners are inclined to keep on getting
+                themselves new pets when the old ones pass away. If one has been the receiver of unconditional love and
+                affection from a pet and has enjoyed a pets undemanding companionship then one is addicted for life.</p>
+            <button class="btn btn-primary">Adopt a Pet Now</button>
+        </div>
+    </div>
+    <!-- Accessories Section -->
+    <div id="accessories">
+        <h1>Accessories</h1>
+        <div id="pet-acc">
+            <div class="ass-card">
+                <img src="./images/aquerium.webp" alt="">
+                <div id="title">
+                    <h2>Round Ends Aquarium Tank (5.4 L)</h2>
+                    <div id="rating">
+                        4.3 &star;
                     </div>
                 </div>
+                <p>The transparent body of the tank is what makes Glass tank so attractive.</p>
+                <p>Yes, it can tell you when to change the water and whether something dropped inside</p>
+                <button class="btn btn-primary">Buy Now</button>
+            </div>
+            <div class="ass-card">
+                <img src="./images/pet bed.webp" alt="" class="petbed">
+                <div id="title">
+                    <h2> Cat Dog Pet Bed</h2>
+                    <div id="rating">
+                        4.3 &star;
+                    </div>
+                </div>
+                <p>Mysense Incorporation is dealing in the field of pet beds from a long time.</p>
+                <p>It understands the need of comfort and quality bed for the pets who need love and care.</p>
+                <button class="btn btn-primary">Buy Now</button>
+            </div>
+            <div class="ass-card">
+                <img src="./images/cage.webp" alt="" class="cage">
+                <div id="title">
+                    <h2>Bird House</h2>
+                    <div id="rating">
+                        4.3 &star;
+                    </div>
+                </div>
+                <p>DURABLE - The durable metal cage uses a non-toxic metallic finish for total eco-friendliness to man
+                    and bird.</p>
+                <p>EASY TO MAITAIN - Cage detaches from base for fast, easy cleaning.</p>
+                <button class="btn btn-primary">Buy Now</button>
             </div>
         </div>
-        <!-- Copyright Section -->
-        <div id="copy">
-            <hr>
-            <span>&copy;</span>
-            <span>Made with</span>
-            <span id="heart">&hearts;</span>
-            <span>By Rounak Mojumeder</span>
+    </div>
+    <!-- Footer Section -->
+    <div id="footer">
+        <div id="footer-cont">
+            <div class="footer-content-div">
+                <h2>About us</h2>
+                <p>How it works</p>
+                <p>Testimonials</p>
+                <p>Careers</p>
+                <p>Investors</p>
+                <p>Terms of Services</p>
+            </div>
+            <div class="footer-content-div">
+                <h2>Get Help</h2>
+                <p>Contact</p>
+                <p>Support</p>
+                <p>FAQ</p>
+                <p>Sponsorships</p>
+                <p>Destinations</p>
+            </div>
+            <div class="footer-content-div">
+                <h2>Videos</h2>
+                <p>Submit Video</p>
+                <p>Ambassadors</p>
+                <p>Agency</p>
+                <p>Return Policy</p>
+                <p>Influencer</p>
+            </div>
+            <div class="footer-content-div">
+                <h2>Social Media</h2>
+                <div id="social-icon">
+                    <img src="./images/fb.png" alt="">
+                    <img src="./images/instagram.png" alt="">
+                    <img src="./images/youtube-logo.png" alt="">
+                </div>
+            </div>
         </div>
-    </body>
+    </div>
+    <!-- Copyright Section -->
+    <div id="copy">
+        <hr>
+        <span>&copy;</span>
+        <span>Made with</span>
+        <span id="heart">&hearts;</span>
+        <span>By Rounak Mojumeder</span>
+    </div>
+</body>
+
 </html>
